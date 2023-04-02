@@ -1,0 +1,65 @@
+body {
+    font-family: $front;
+    color: $black-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    overflow-y: overflow;
+    overflow-x: hidden;
+}
+.heading {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    color: $black-color;
+}
+.sub-heading {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    color: $black-color;
+}
+.wrapper {
+    margin: 0 auto;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.button {
+    padding: 10px 20px;
+    color: $white-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: $blue-color;
+    max-width: 160px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+    .heading {
+        font-size: 28px;
+        font-weight: 400;
+    }
+    .sub-heading {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .heading {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .sub-heading {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .sub-heading {
+        font-size: 10px;
+    }
+}

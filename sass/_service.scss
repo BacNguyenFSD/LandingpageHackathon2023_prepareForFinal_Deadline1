@@ -1,0 +1,100 @@
+.service {
+    margin-top: 60px;
+    padding: 10px;
+    position: relative;
+    max-width: 1200px;
+    margin-inline: auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    &-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 390px;
+        gap: 50px;
+        padding: 20px;
+    }
+    &-img {
+        max-width: 420px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0;
+        .button {
+            width: 130px;
+            height: 40px;
+        }
+        .heading {
+            font-weight: 600;
+        }
+    }
+    &-sub {
+        p {
+            padding: 5px;
+        }
+    }
+    &-gift {
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .service {
+        padding: 20px;
+    }
+
+    .service-main .heading {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .service {
+        margin-top: 0;
+        padding: 20px;
+        text-align: center;
+    }
+    .service-main {
+        flex-direction: column;
+        height: 100%;
+    }
+    .service-img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .service-content {
+        gap: 10px;
+        align-items: center;
+    }
+    .service-sub p {
+        padding: 0;
+    }
+    .service-content .btn-service {
+        margin-top: 10px;
+        height: 35px;
+        font-size: 1.6rem;
+        width: 120px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .service-main {
+        padding: 0;
+        gap: 0;
+    }
+    .service-main .heading {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .service-sub p {
+        font-size: 1.4rem;
+    }
+}

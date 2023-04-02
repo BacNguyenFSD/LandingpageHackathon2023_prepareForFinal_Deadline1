@@ -1,0 +1,61 @@
+.cloud-service {
+    background-color: #f6f6f6;
+    padding: 40px 0;
+    height: 500px;
+    position: relative;
+    &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 249px;
+        height: 165px;
+        background: linear-gradient(118.48deg, rgba(84, 35, 188, 0.42) 21.42%, rgba(194, 64, 88, 0.41) 79.81%);
+        filter: blur(50px);
+        border-radius: 150px 100px 200px 200px;
+        content: '';
+    }
+    &-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .heading {
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 3.2rem;
+    }
+    .sub-heading {
+        margin-bottom: 20px;
+        font-size: 1.6rem;
+    }
+    &-img {
+        margin-top: 20px;
+        width: 450px;
+        z-index: 1;
+    }
+    .btn-cloud {
+        width: 120px;
+        height: 35px;
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 767px) {
+    .cloud-service .heading {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .cloud-service .sub-heading {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .cloud-service-img {
+        width: unset;
+    }
+    .cloud-service {
+        padding: 20px;
+        height: 400px;
+    }
+}
